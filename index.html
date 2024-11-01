@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">Bakeries in Raleigh</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,8 +27,8 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [35.7818, -78.6763], // EDIT coordinates to re-center map
+    zoom: 15,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
@@ -41,8 +41,13 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([35.8945135,-79.0250081]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Insomnia Cookies"); // EDIT pop-up text message
+
+/* Display a point marker with pop-up text */
+L.marker([35.7874058,-78.6989897]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Jerusalem Bakery & Grocery"); // EDIT pop-up text message
+
 
   </script>
 </body>
