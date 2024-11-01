@@ -34,7 +34,7 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
@@ -42,7 +42,7 @@
 
   /* Display a point marker with pop-up text */
   L.marker([35.8945135,-79.0250081]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insomnia Cookies"); // EDIT pop-up text message
+  .bindPopup("Insomnia"); // EDIT pop-up text message
 
 /* Display a point marker with pop-up text */
 L.marker([35.7874058,-78.6989897]).addTo(map) // EDIT marker coordinates
